@@ -333,11 +333,10 @@ body {
     }
 }
 
-/* PROJECT SECTION */
 .projects {
     padding: 80px 10%;
     text-align: center;
-    background: #f5f7fa;
+    background: #f7faff;
 }
 
 .projects h2 {
@@ -409,7 +408,7 @@ body {
 
 .business-section {
   padding: 70px 10%;
-  background: #f9f9ff;
+  background: #f7faff;
   text-align: center;
 }
 
@@ -467,6 +466,7 @@ body {
 #contact {
     text-align: center;
     padding: 60px 20px;
+    background: #f7faff;
 }
 
 #contact h2 {
@@ -501,7 +501,7 @@ body {
 }
 
 .contact-btn {
-    background: #4e73df;
+    background: #38bdf8;
     color: white;
     padding: 10px 25px;
     border-radius: 10px;
@@ -511,7 +511,7 @@ body {
 }
 
 .contact-btn:hover {
-    background: #314fb8;
+    background: #0ea5e9;
     transform: scale(1.07);
 }
 
@@ -577,4 +577,5 @@ footer {
     border-top: 1px solid #333;
     font-size: 14px;
     color: #aaa;
+
 }
