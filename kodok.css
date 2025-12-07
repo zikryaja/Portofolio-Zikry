@@ -1,0 +1,105 @@
+:root {
+  --skin: #7fff00;
+  --green-dark: #378b27;
+  --green-light: #52c540;
+  --pink: #ff80c0;
+  --black: #000;
+  --white: #fff;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--green-light) 0px,
+    var(--green-light) 80px,
+    var(--green-dark) 80px,
+    var(--green-dark) 160px
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kepala {
+  position: relative;
+  width: 340px;
+  height: 280px;
+  background: var(--skin);
+  border-radius: 50% 50% 45% 45%;
+  border: 8px solid var(--black);
+}
+
+.mata {
+  position: absolute;
+  top: -60px;
+  width: 140px;
+  height: 140px;
+  background: var(--white);
+  border-radius: 50%;
+  border: 8px solid var(--black);
+}
+
+.mata.kiri {
+  left: 0;
+}
+
+.mata.kanan {
+  right: 0;
+}
+
+.pupil {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: var(--black);
+  border-radius: 50%;
+  top: 45%;
+  left: 45%;
+}
+
+.pipi {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background: var(--pink);
+  border-radius: 50%;
+  bottom: 90px;
+}
+
+.pipi.kiri {
+  left: 45px;
+}
+
+.pipi.kanan {
+  right: 45px;
+}
+
+.mulut {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: 100px;
+  height: 60px;
+  transform: translateX(-50%);
+}
+
+.mulut .garis {
+  position: absolute;
+  width: 58px;
+  height: 8px;
+  background: var(--black);
+  top: 55%;
+  border-radius: 10px;
+}
+
+.mulut .garis.kiri {
+  left: 0;
+  transform: rotate(35deg);
+}
+
+.mulut .garis.kanan {
+  right: 0;
+  transform: rotate(-35deg);
+}

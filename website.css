@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0b2239;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  z-index: 1000;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00c896;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #0b2239, #08365a);
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.home h1 {
+  font-size: 3rem;
+  animation: fadeInDown 1s ease;
+}
+
+.home .sub {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.home .slogan {
+  margin-top: 5px;
+  font-style: italic;
+  color: #00c896;
+  font-weight: 600;
+}
+
+.product {
+  padding: 100px 50px;
+  background: #f9fafb;
+  text-align: center;
+  animation: fadeUp 1s ease both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.product h2 {
+  font-size: 2rem;
+  color: #0b2239;
+  margin-bottom: 40px;
+}
+
+.product-container, .deep-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeUp 0.8s ease both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card h3, .card h4 {
+  color: #0b2239;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.price {
+  margin-top: 15px;
+  font-weight: 600;
+  color: #00a67e;
+}
+
+.price .old {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #00c896;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00a67e;
+}
+
+.deep-title {
+  margin: 50px 0 20px;
+  color: #0b2239;
+  font-size: 1.5rem;
+  animation: fadeUp 1s ease both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.testimonial {
+  background: #e9eef3;
+  padding: 100px 50px;
+  text-align: center;
+  animation: fadeUp 1s ease both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.testimonial h2 {
+  color: #0b2239;
+  margin-bottom: 30px;
+}
+
+.testi-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.testi-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  transition: transfrom 0.3s ease;
+  animation: fadeUp 1s ease both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.testi-box:hover {
+  transform: scale(1.05);
+}
+
+.testi-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.testi-box img:hover {
+  filter: brightness(1.1);
+}
+
+.contact {
+  padding: 100px 50px;
+  text-align: center;
+  background: #f9fafb;
+  animation: fadeUp 1s ease both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.contact h2 {
+  color: #0b2239;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.wa-btn {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.wa-btn:hover {
+  background: #1da955;
+}
+
+footer {
+  background: #0b2239;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
