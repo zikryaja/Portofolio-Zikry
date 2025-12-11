@@ -336,7 +336,10 @@ body {
 .projects {
     padding: 80px 10%;
     text-align: center;
-    background: #f7faff;
+    background: #f5f7fa;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1.2s ease;
 }
 
 .projects h2 {
@@ -406,67 +409,82 @@ body {
     background: #0ea5e9;
 }
 
+.projects.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .business-section {
-  padding: 70px 10%;
-  background: #f7faff;
-  text-align: center;
+    padding: 70px 10%;
+    background: #f9f9ff;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1.2s ease;
 }
 
 .business-section h2 {
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: #111;
-  font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #111;
+    font-weight: 700;
 }
 
 .business-section .desc {
-  color: #555;
-  margin-bottom: 25px;
-  font-size: 15px;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 15px;
 }
 
 .business-single {
-  max-width: 420px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
+    max-width: 420px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
 }
 
 .business-image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
-  transition: transform .25s ease, box-shadow .25s ease;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .business-image:hover {
-  transform: scale(1.03);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    transform: scale(1.03);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
 }
 
 .business-btn {
-  padding: 12px 20px;
-  background: #38bdf8;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 10px;
-  transition: background .25s ease, transform .15s ease;
+    padding: 12px 20px;
+    background: #38bdf8;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: background .25s ease, transform .15s ease;
 }
 
 .business-btn:hover {
-  background: #0ea5e9;
-  transform: translateY(-3px);
+    background: #0ea5e9;
+    transform: translateY(-3px);
+}
+
+.business-section.reveal {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #contact {
     text-align: center;
     padding: 60px 20px;
-    background: #f7faff;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1.2s ease;
 }
 
 #contact h2 {
@@ -513,6 +531,11 @@ body {
 .contact-btn:hover {
     background: #0ea5e9;
     transform: scale(1.07);
+}
+
+#contact.reveal {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 footer {
@@ -577,5 +600,4 @@ footer {
     border-top: 1px solid #333;
     font-size: 14px;
     color: #aaa;
-
 }
